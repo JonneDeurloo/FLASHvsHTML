@@ -125,15 +125,24 @@ body {
 	margin: 0 auto;
 	padding-top: 100px;
 	padding-bottom: 40px;
+	overflow: hidden;
 }
 
 #content_image {
+	width: 1000px;
 	height: 150px;
+	margin-left: -100px;
 	background-color: #B3B3B3;
 	background-image: url('../../images/background.png');
 	background-repeat: repeat;
 	opacity: 0.5;
 	position: relative;
+	animation: myfirst 2s infinite linear;
+}
+
+@keyframes myfirst {
+	from{ left: 0;}
+	to{ left: 42px;}
 }
 
 .block {
