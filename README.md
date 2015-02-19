@@ -1,6 +1,5 @@
 # FLASHvsHTML
-
-	This website is build as project for "Webtechnolgy", a course on the University of Utrecht.
+# This website is build as project for "Webtechnolgy", a course on the University of Utrecht.
 
 
 Authors:
@@ -12,3 +11,5 @@ Tested in:
 	-
 	-
 	-
+
+References:
