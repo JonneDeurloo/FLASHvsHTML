@@ -41,11 +41,13 @@
 #menu a:hover {
 	color: #eeeeee;
 	background-color: #666666;
+	font-size: 1.2em;
 }
 
 #menu a:active {
   	color: #eeeeee;
 	background-color: #666666;
+	font-size: 1.2em;
 }
 
 #menu .active a{
@@ -70,9 +72,9 @@
 	width: 36px;
 	height: 36px;
 	margin: 7px;
-	transition: margin 0.2s ease 0s, width 0s, height 0s;
+	transition: margin-top 0.4s ease-out;
 }
 
 #info img:hover {
-	margin-top: 3px;
+	margin-top: 1px;
 }

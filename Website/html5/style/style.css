@@ -66,10 +66,11 @@ body {
 	to{ left: 42px;}
 }
 
-#flash_game {
+#html5_game {
 	text-align: center;
 	padding-left: 0;
 }
+
 .block {
 	background-color: #F2F2F2;
 	width: 100%;
