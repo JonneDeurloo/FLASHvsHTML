@@ -123,6 +123,14 @@ body {
 	text-indent: 1em;
 }
 
+.block p {
+	color: #333;
+	font-family: "Arial Narrow", sans-serif;
+	font-size: 0.95em;
+	padding: 1em 1.8em;
+	text-indent: 1em;
+}
+
 .block br:after {
 	text-indent: 1em;
 }
@@ -130,6 +138,7 @@ body {
 a {
 	color: #0254EB;
 }
+
 a:visited {
 	color: #0254EB;
 }
@@ -138,16 +147,18 @@ a.morelink {
 	text-decoration:none;
 	outline: none;
 }
+
 .morecontent span {
 	display: none;
 
 }
 
-#flot {
+#placeholder {
+	width: 80%;
 	height: 500px;
+	background-color: #E6E6E6;
+	margin: 0 auto;
 }
-
-
 
 
 /* Make responsive */

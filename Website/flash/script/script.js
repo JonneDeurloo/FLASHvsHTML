@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	/* Create the option "more" or "less" in the paragraphcs */
 	var showChar = 400;
 	var ellipsestext = "...";
 	var moretext = "more";
@@ -32,3 +33,6 @@ $(document).ready(function() {
 	});
 });
 
+$(document).ready(function() {
+	$.plot($("#placeholder"), [ [[0, 0], [1, 1]] ], { yaxis: { max: 1 } });
+});

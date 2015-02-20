@@ -37,9 +37,10 @@ body {
 
 hr {
     display: block;
-    height: 1px;
+    height: 2px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #EEE;
     margin: 1em 0;
     padding: 0;
 }
