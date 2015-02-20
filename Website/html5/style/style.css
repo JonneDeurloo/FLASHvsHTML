@@ -58,12 +58,6 @@ body {
 	background-repeat: repeat;
 	opacity: 0.5;
 	position: relative;
-	animation: myfirst 2s infinite linear;
-}
-
-@keyframes myfirst {
-	from{ left: 0;}
-	to{ left: 42px;}
 }
 
 #html5_game {

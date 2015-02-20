@@ -55,19 +55,10 @@ body {
 	margin-left: -100px;
 	position: relative;
 	background-color: #B3B3B3;
-}
-/*
 	background-image: url('../../images/background.png');
 	background-repeat: repeat;
 	opacity: 0.5;
-	animation: myfirst 2s infinite linear;
 }
-
-@keyframes myfirst {
-	from{ left: 0;}
-	to{ left: 42px;}
-}
-*/
 
 #flash_game {
 	text-align: center;

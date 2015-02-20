@@ -35,6 +35,16 @@ body {
 	height: 100%;
 }
 
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #EEE;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
 /* ----------- Content ----------- */
 #content {
 	margin-left: 150px;
@@ -42,104 +52,54 @@ body {
 }
 
 #content_wrapper {
-	width: 50%;
+	width: 65%;
 	margin: 0 auto;
 	padding-top: 100px;
 	padding-bottom: 40px;
 	overflow: hidden;
 }
 
-#content_image {
-	width: 1000px;
-	height: 150px;
-	margin-left: -100px;
-	background-color: #B3B3B3;
-	background-image: url('../../images/background.png');
-	background-repeat: repeat;
-	opacity: 0.5;
-	position: relative;
-	animation: myfirst 2s infinite linear;
-}
-
-@keyframes myfirst {
-	from{ left: 0;}
-	to{ left: 42px;}
-}
-
-#flash_game {
+#compare {
 	text-align: center;
-	padding-left: 0;
-}
-.block {
-	background-color: #F2F2F2;
-	width: 100%;
 	position: relative;
-	margin-bottom: 40px;
 }
 
-
-.block h1 {	
-	background-color: #3FC380;
-	color: #F2F2F2;
-	display: block;
+#compare h1 {
+	color: #222;
+	text-shadow: 0px 0px 1px #999;
 	font-family: "Diner-Fatt", sans-serif;
-	font-size: 2.6em;
-	line-height: 1.5em;
-	height: 1.5em;
-	padding-left: 0.6em;
+	font-size: 5em;
+	font-weight: normal;
 }
 
-.block h2 {	
+#compare ul {
+
+}
+
+#compare li {
+
+}
+
+.option {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.option h2 {
+	text-align: center;
 	color: #222;
 	font-family: "Diner-Fatt", sans-serif;
-	font-size: 2.2em;
-	line-height: 1em;
-	height: 1em;
-	padding: 0.4em 0.6em 0.1em 0.6em;
+	font-size: 2em;
+	font-weight: normal;
 }
 
-.block h2:after {
-    content:' ';
-    display: block;
-    border: 2px solid #d0d0d0;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-}
-
-
-.block p {
-	color: #333;
-	font-family: "Arial Narrow", sans-serif;
-	font-size: 0.95em;
-	padding: 1em 1.8em;
-	text-indent: 1em;
-}
-
-.block br:after {
-	text-indent: 1em;
-}
-
-a {
-	color: #0254EB;
-}
-a:visited {
-	color: #0254EB;
-}
-
-a.morelink {
-	text-decoration:none;
-	outline: none;
-}
-.morecontent span {
-	display: none;
+.option ul {
 
 }
 
+.option li {
 
+}
 
 
 /* Make responsive */
