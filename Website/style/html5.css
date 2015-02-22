@@ -132,15 +132,17 @@ body {
 
 #html5_menu li a {
 	padding: 0.3em 0;
-	background-color: #666;
+	background-color: #555;
 	display: block;
 	text-decoration: none;
 	font-family: "Arial Narrow", sans-serif;
-	color: #eeeeee;
+	color: #AAA;
+	transition: all 0.2s ease 0s;
 }
 
 #html5_menu li a:hover {
-	background-color: #888;
+	color: #CCC;
+	background-color: #777;
 }
 
 a {
@@ -159,8 +161,28 @@ a.morelink {
 
 }
 
+#arrowup {
+	width: 42px;
+	height: 42px;
+	background-color: #777;
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	text-align: center;
+	cursor: pointer;
+	transition: margin 0.2s ease 0s;
+}
 
+#arrowup img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 65%;
+}
 
+#arrowup:hover {
+	margin-bottom: 3px;
+}
 
 /* Make responsive */
 @media all and (max-width: 1024px) {

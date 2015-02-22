@@ -126,6 +126,34 @@ body {
 	text-indent: 1em;
 }
 
+#flash_menu {
+	display: inline;
+	width: 100%;
+	position: relative;
+}
+
+#flash_menu li {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+
+#flash_menu li a {
+	padding: 0.3em 0;
+	background-color: #555;
+	display: block;
+	text-decoration: none;
+	font-family: "Arial Narrow", sans-serif;
+	color: #AAA;
+	transition: all 0.2s ease 0s;
+}
+
+#flash_menu li a:hover {
+	color: #CCC;
+	background-color: #777;
+}
+
+
 a {
 	color: #0254EB;
 }
@@ -151,6 +179,28 @@ a.morelink {
 	margin: 0 auto;
 }
 
+#arrowup {
+	width: 42px;
+	height: 42px;
+	background-color: #777;
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	text-align: center;
+	cursor: pointer;
+	transition: margin 0.2s ease 0s;
+}
+
+#arrowup img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 65%;
+}
+
+#arrowup:hover {
+	margin-bottom: 3px;
+}
 
 /* Make responsive */
 @media all and (max-width: 1024px) {
