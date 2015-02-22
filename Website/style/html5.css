@@ -118,6 +118,31 @@ body {
 	text-indent: 1em;
 }
 
+#html5_menu {
+	display: inline;
+	width: 100%;
+	position: relative;
+}
+
+#html5_menu li {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+
+#html5_menu li a {
+	padding: 0.3em 0;
+	background-color: #666;
+	display: block;
+	text-decoration: none;
+	font-family: "Arial Narrow", sans-serif;
+	color: #eeeeee;
+}
+
+#html5_menu li a:hover {
+	background-color: #888;
+}
+
 a {
 	color: #0254EB;
 }

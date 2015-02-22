@@ -7,7 +7,6 @@ $(document).ready(function() {
 		var content = $(this).html();
 
 		if(content.length > showChar) {
-
 			var c = content.substr(0, showChar);
 			var h = content.substr(showChar-1, content.length - showChar);
 
@@ -29,5 +28,30 @@ $(document).ready(function() {
 		$(this).parent().prev().toggle();
 		$(this).prev().toggle();
 		return false;
+	});
+
+// -------------------------------------------------------------
+	$("#item1").click(function() {
+   		$("html, body").animate({
+      		scrollTop: $("#header1").offset().top
+    	}, 800);
+	});
+
+	$("#item2").click(function() {
+   		$("html, body").animate({
+      		scrollTop: $("#header2").offset().top
+    	}, 800);
+	});
+
+	$("#item3").click(function() {
+   		$("html, body").animate({
+      		scrollTop: $("#header3").offset().top
+    	}, 800);
+	});
+
+	$("#item4").click(function() {
+   		$("html, body").animate({
+      		scrollTop: $("#header4").offset().top
+    	}, 800);
 	});
 });
