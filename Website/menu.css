@@ -44,12 +44,6 @@
 	font-size: 1.2em;
 }
 
-#menu a:active {
-  	color: #eeeeee;
-	background-color: #666666;
-	font-size: 1.2em;
-}
-
 #menu .active a{
 	color: #eeeeee;
 	background-color: #666666;

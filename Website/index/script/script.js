@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $("#innerDiv").css('top', ($(window).height() - $("#content").height()) / 2);
+    $("#content").css('top', ($(window).height() - $("#content_wrapper").height()) / 2);
 });

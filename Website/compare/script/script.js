@@ -1,33 +1,28 @@
+// Make the sticky menu
 $(document).ready(function() {
-	var showChar = 400;
-	var ellipsestext = "...";
-	var moretext = "more";
-	var lesstext = "less";
-	$('.more').each(function() {
-		var content = $(this).html();
+	// Clone the existing menu
+	$('#html_flash').addClass('original').clone().insertAfter('#html_flash').addClass('cloned').removeClass('original').hide();
 
-		if(content.length > showChar) {
+	// Start function when scrolling
+	$(document).scroll(makeSticky);
 
-			var c = content.substr(0, showChar);
-			var h = content.substr(showChar-1, content.length - showChar);
+	// Function to make menu sticky
+	function makeSticky() {
+		// original position of the menu
+		var originalPos = $('.original').offset();
+		originalTop = originalPos.top;               
 
-			var html = c + '<span class="moreelipses">'+ellipsestext+'</span>&nbsp;<span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">'+moretext+'</a></span>';
-
-			$(this).html(html);
-		}
-
-	});
-
-	$(".morelink").click(function(){
-		if($(this).hasClass("less")) {
-			$(this).removeClass("less");
-			$(this).html(moretext);
+		if ($(window).scrollTop() >= (originalTop)) {    
+			// scrolled passed the menu; show cloned menu
+			original = $('.original');
+			originalLeft = original.offset().left;  
+			originalWidth = original.css('width');
+			$('.cloned').css('left', originalLeft + 'px').css('width', originalWidth).show();
+			$('.original').css('visibility', 'hidden');
 		} else {
-			$(this).addClass("less");
-			$(this).html(lesstext);
+			// not scrolled past the menu; only show the original menu.
+			$('.cloned').hide();
+			$('.original').css('visibility', 'visible');
 		}
-		$(this).parent().prev().toggle();
-		$(this).prev().toggle();
-		return false;
-	});
+	}
 });

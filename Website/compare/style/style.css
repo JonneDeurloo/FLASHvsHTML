@@ -55,13 +55,12 @@ hr {
 	width: 65%;
 	margin: 0 auto;
 	padding-top: 100px;
-	padding-bottom: 40px;
+	padding-bottom: 300px;
 	overflow: hidden;
 }
 
 #compare {
 	text-align: center;
-	position: relative;
 }
 
 #compare h1 {
@@ -72,12 +71,45 @@ hr {
 	font-weight: normal;
 }
 
-#compare ul {
-
+#html_flash {
+	transition: all 0.5s ease 0s;
 }
 
-#compare li {
+#html_flash ul {
+	display: inline;
+}
 
+#html_flash li {
+	color: #222;
+	text-shadow: 0px 0px 1px #999;
+	font-family: "Diner-Fatt", sans-serif;
+	font-size: 3em;
+	font-weight: normal;
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+}
+
+#html_flash.cloned {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	background-color: #3FC380;
+}
+
+#html_flash.cloned ul {
+	display: inline;
+}
+
+#html_flash.cloned li {
+	color: #F2F2F2;
+	text-shadow: 0px 0px 1px #999;
+	font-family: "Diner-Fatt", sans-serif;
+	font-size: 3em;
+	font-weight: normal;
+	display: inline-block;
+	width: 40%;
+	text-align: center;
 }
 
 .option {
@@ -88,19 +120,34 @@ hr {
 .option h2 {
 	text-align: center;
 	color: #222;
-	font-family: "Diner-Fatt", sans-serif;
-	font-size: 2em;
+	font-family: "Arial", sans-serif;
+	font-size: 1.1em;
 	font-weight: normal;
+	margin-top: 4em;
 }
 
 .option ul {
-
+	display: inline;
+	color: #222;
+	font-family: "Arial Narrow", sans-serif;
 }
 
 .option li {
+	display: inline-block;
+	width: 40%;
+	margin: 0 auto;
 
 }
 
+.option li.left {
+	padding-left: 2em;
+	float: left;
+}
+
+.option li.right {
+	padding-right: 2em;
+	float: right;
+}
 
 /* Make responsive */
 @media all and (max-width: 1024px) {

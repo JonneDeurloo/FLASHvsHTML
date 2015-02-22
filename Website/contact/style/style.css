@@ -35,109 +35,81 @@ body {
 	height: 100%;
 }
 
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #EEE;
+    margin: 1em 0;
+    padding: 0;
+}
+
 /* ----------- Content ----------- */
 #content {
 	margin-left: 150px;
 	background-color: #DFDFDF;
+	height: 100%;
 }
 
 #content_wrapper {
-	width: 50%;
+	width: 65%;
 	margin: 0 auto;
-	padding-top: 100px;
-	padding-bottom: 40px;
 	overflow: hidden;
-}
-
-#content_image {
-	width: 1000px;
-	height: 150px;
-	margin-left: -100px;
-	background-color: #B3B3B3;
-	background-image: url('../../images/background.png');
-	background-repeat: repeat;
-	opacity: 0.5;
 	position: relative;
-	animation: myfirst 2s infinite linear;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-@keyframes myfirst {
-	from{ left: 0;}
-	to{ left: 42px;}
-}
-
-#flash_game {
-	text-align: center;
-	padding-left: 0;
-}
-.block {
-	background-color: #F2F2F2;
-	width: 100%;
-	position: relative;
-	margin-bottom: 40px;
-}
-
-
-.block h1 {	
+h1 {
 	background-color: #3FC380;
 	color: #F2F2F2;
 	display: block;
 	font-family: "Diner-Fatt", sans-serif;
 	font-size: 2.6em;
-	line-height: 1.5em;
-	height: 1.5em;
+	line-height: 1.2em;
+	height: 1.2em;
 	padding-left: 0.6em;
 }
 
-.block h2 {	
-	color: #222;
-	font-family: "Diner-Fatt", sans-serif;
-	font-size: 2.2em;
-	line-height: 1em;
-	height: 1em;
-	padding: 0.4em 0.6em 0.1em 0.6em;
-}
-
-.block h2:after {
-    content:' ';
-    display: block;
-    border: 2px solid #d0d0d0;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-}
-
-
-.block p {
+p {
 	color: #333;
 	font-family: "Arial Narrow", sans-serif;
-	font-size: 0.95em;
+	font-size: 1em;
 	padding: 1em 1.8em;
 	text-indent: 1em;
 }
 
-.block br:after {
-	text-indent: 1em;
+#alex {
+	width: 100%;
+	height: 40%;
+	position: relative;
+	display: block;
 }
 
-a {
-	color: #0254EB;
-}
-a:visited {
-	color: #0254EB;
+#jonne {
+	width: 100%;
+	height: 40%;
+	position: relative;
+	display: block;
 }
 
-a.morelink {
-	text-decoration:none;
-	outline: none;
+.person_photo {
+	width: 30%;
+	padding-left: 5%;
+	float: left;
 }
-.morecontent span {
-	display: none;
 
+.person_photo img {
+	height: 100%;
 }
+
+.person_info {
+	width: 60%;
+	float: left;
+	padding-right: 5%;
+}
+
 
 
 
