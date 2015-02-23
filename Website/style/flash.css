@@ -190,7 +190,16 @@ body {
 	margin-bottom: 3px;
 }
 
-/* Make responsive */
+
+/* Make responsive for screens with a max-width 1280px */
+@media all and (max-width: 1280px) {
+
+	#content_wrapper{
+		width: 70%;
+	}
+}
+
+/* Make responsive for screens with a max-width 1024px */
 @media all and (max-width: 1024px) {
 
 	#content_wrapper{
