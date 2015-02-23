@@ -50,9 +50,8 @@ body {
 }
 
 #content_image {
-	width: 1000px;
+	width: 100%;
 	height: 150px;
-	margin-left: -100px;
 	background-color: #B3B3B3;
 	background-image: url('../images/background.png');
 	background-repeat: repeat;
@@ -136,29 +135,13 @@ body {
 	display: block;
 	text-decoration: none;
 	font-family: "Arial Narrow", sans-serif;
-	color: #AAA;
+	color: #BBB;
 	transition: all 0.2s ease 0s;
 }
 
 #html5_menu li a:hover {
-	color: #CCC;
+	color: #F2F2F2;
 	background-color: #777;
-}
-
-a {
-	color: #0254EB;
-}
-a:visited {
-	color: #0254EB;
-}
-
-a.morelink {
-	text-decoration:none;
-	outline: none;
-}
-.morecontent span {
-	display: none;
-
 }
 
 #arrowup {

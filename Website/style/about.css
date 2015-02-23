@@ -50,26 +50,15 @@ body {
 }
 
 #content_image {
-	width: 1000px;
+	width: 100%;
 	height: 150px;
-	margin-left: -100px;
 	background-color: #B3B3B3;
 	background-image: url('../images/background.png');
 	background-repeat: repeat;
 	opacity: 0.5;
 	position: relative;
-	animation: myfirst 2s infinite linear;
 }
 
-@keyframes myfirst {
-	from{ left: 0;}
-	to{ left: 42px;}
-}
-
-#flash_game {
-	text-align: center;
-	padding-left: 0;
-}
 .block {
 	background-color: #F2F2F2;
 	width: 100%;
@@ -123,23 +112,21 @@ body {
 	text-indent: 1em;
 }
 
-a {
-	color: #0254EB;
-}
-a:visited {
-	color: #0254EB;
-}
-
-a.morelink {
-	text-decoration:none;
-	outline: none;
-}
-.morecontent span {
-	display: none;
-
+.block ul {
+	color: #333;
+	font-family: "Arial Narrow", sans-serif;
+	font-size: 0.95em;
+	padding: 1em 3em;
 }
 
+.block a {
+	text-decoration: none;
+	color: #333;
+}
 
+.block a:hover {
+	color: #666;	
+}
 
 
 /* Make responsive */

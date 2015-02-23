@@ -52,23 +52,23 @@
 #info {
 	position: fixed;
 	bottom: 0;
-}
-
-#info ul {
-	display: flex;
+	width: 150px;
+	display: inline;
 }
 
 #info li {
-	display: inline;
+	display: inline-block;
+	width: 75px;
+	text-align: center;
 }
 
 #info img {
 	width: 36px;
 	height: 36px;
-	margin: 7px;
-	transition: margin-top 0.4s ease-out;
+	margin-bottom: 6px;
+	transition: margin-bottom 0.4s ease-out;
 }
 
 #info img:hover {
-	margin-top: 1px;
+	margin-bottom: 9px;
 }

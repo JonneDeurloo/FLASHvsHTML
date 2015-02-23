@@ -50,19 +50,14 @@ body {
 }
 
 #content_image {
-	width: 1000px;
+	width: 100%;
 	height: 150px;
-	margin-left: -100px;
 	background-color: #B3B3B3;
 	background-image: url('../images/background.png');
 	background-repeat: repeat;
 	opacity: 0.5;
 }
 
-#flash_game {
-	text-align: center;
-	padding-left: 0;
-}
 .block {
 	background-color: #F2F2F2;
 	width: 100%;
@@ -116,23 +111,28 @@ body {
 	text-indent: 1em;
 }
 
-a {
-	color: #0254EB;
-}
-a:visited {
-	color: #0254EB;
-}
-
-a.morelink {
-	text-decoration:none;
-	outline: none;
-}
-.morecontent span {
-	display: none;
-
+#arrowup {
+	width: 42px;
+	height: 42px;
+	background-color: #777;
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	text-align: center;
+	cursor: pointer;
+	transition: margin 0.2s ease 0s;
 }
 
+#arrowup img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 65%;
+}
 
+#arrowup:hover {
+	margin-bottom: 3px;
+}
 
 
 /* Make responsive */

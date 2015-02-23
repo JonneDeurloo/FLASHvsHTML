@@ -1,15 +1,18 @@
 # FLASHvsHTML
-This website is build as project for "Webtechnolgy", a course on the University of Utrecht.
+Deze website is gemaakt als onderdeel van het vak 'Webtechnologie', gegeven aan de Universiteit Utrecht.
 
 
-## Authors:
+## Auteurs:
 Alex Leestemaker, 	5518628
 Jonne Deurloo, 		4120167
 
-## Tested in:
+## Getest in:
 	-
 	-
 	-
 	-
 
-## References:
+## Added features:
+	- Pijl om terug naar boven te gaan als je midden in de pagina zit.
+	- Menu in de pagina HTML5 en Flash die navigeert naar de desbetreffende paragraaf.
+	- Sticky header in Compare
