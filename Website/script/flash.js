@@ -1,26 +1,12 @@
 $(document).ready(function() {
 	// scroll to the paragraph by clicking the menu
-	$("#item1").click(function() {
-   		$("html, body").animate({
-      		scrollTop: $("#header1").offset().top
-    	}, 800);
-	});
+	$(".menu_item").click(function() {
+		var getId = $(this).attr('id');
+		var idNr = getId.substr(getId.length - 1);
+		var id = "#header" + idNr;
 
-	$("#item2").click(function() {
    		$("html, body").animate({
-      		scrollTop: $("#header2").offset().top
-    	}, 800);
-	});
-
-	$("#item3").click(function() {
-   		$("html, body").animate({
-      		scrollTop: $("#header3").offset().top
-    	}, 800);
-	});
-
-	$("#item4").click(function() {
-   		$("html, body").animate({
-      		scrollTop: $("#header4").offset().top
+      		scrollTop: $(id).offset().top
     	}, 800);
 	});
 
@@ -34,9 +20,14 @@ $(document).ready(function() {
     	}, 500);
 	});
 	
+	// add numbers to resources; with style [x]
 	$("a.resource").each(function(i) {
 		$(this).append("[" + (i + 1) + "]");
 	});
+
+	// information for Flot
+	$.plot($("#placeholder"), [ [[0, 0], [1, 1], [2, 4], [4, 16], [8, 64]] ], { yaxis: { max: 70 } });
+
 });
 
 // window on scroll
@@ -51,9 +42,3 @@ $(window).scroll(function() {
 		$("#arrowup").hide(250);
 	}
 });
-
-$(document).ready(function() {
-	$.plot($("#placeholder"), [ [[0, 0], [1, 1], [2, 4], [4, 16], [8, 64]] ], { yaxis: { max: 70 } });
-});
-
-
