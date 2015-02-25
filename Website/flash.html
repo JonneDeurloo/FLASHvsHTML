@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<!-- Something -->
@@ -9,6 +9,7 @@
 		<link href="style/flash.css" rel="stylesheet" type="text/css">
 		<!-- Load stylesheet used for menubar -->
 		<link href="menu.css" rel="stylesheet" type="text/css">	
+		<link href="main.css" rel="stylesheet" type="text/css">	
 
 		<!-- Load jquery script -->	
 		<script src="jquery-1.11.2.min.js"></script>
@@ -25,7 +26,7 @@
 		<div id="container">
 			<!-- Menu on the left -->
 			<div id="menu_bar">
-				<div id="logo"></div>
+				<div id="logo"><a id="index_link" href="index.html"><img src="images/logo.png" alt="logo"></a></div>
 				
 				<!-- Menu itself -->
 				<div id="menu">
@@ -33,17 +34,18 @@
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="html5.html">HTML5</a></li>
 						<li class="active"><a href="flash.html">FLASH</a></li>
-						<li><a href="compare.html">COMPARE</a></li>
-						<li><a href="conclusion.html">CONCLUSION</a></li>
-						<li><a href="about.html">ABOUT</a></li>				
+						<li><a href="compare.html">VERGELIJKING</a></li>
+						<li><a href="conclusion.html">CONCLUSIE</a></li>
+						<li><a href="about.html">BRONNEN</a></li>
+						<li><a href="photos.html">FOTO'S</a></li>			
 					</ul>
 				</div>
 
 				<!-- Few options on the bottom; contact and help/info -->
 				<div id="info">
 					<ul>
-						<li><a href="contact.html"><img src="images/contact.png"></a></li
-						><li><a href="http://www.cs.uu.nl/docs/vakken/b2wt/" target="_blank"><img src="images/help.png"></a></li>
+						<li><a href="contact.html"><img src="images/contact.png" alt="contact_img"></a></li
+						><li><a href="http://www.cs.uu.nl/docs/vakken/b2wt/" target="_blank"><img src="images/help.png" alt="help_img"></a></li>
 					</ul>						
 				</div>						
 			</div>
@@ -59,25 +61,51 @@
 						<h1> Flash </h1>
 
 						<!-- Menu that navigates through the page -->
-						<ul id="flash_menu">
-							<li><a id="item1" href="#header_1"> Header 1 </a></li
-							><li><a id="item2" href="#header_2"> Header 2 </a></li
-							><li><a id="item3" href="#header_3"> Header 3 </a></li
-							><li><a id="item4" href="#header_4"> Header 4 </a></li
+						<ul id="top_menu">
+							<li><a id="item1" href="#header_1"> Geschiedenis </a></li
+							><li><a id="item2" href="#header_2"> Werking </a></li
+							><li><a id="item3" href="#header_3"> ActionScript </a></li
+							><li><a id="item4" href="#header_4"> Toepassingen </a></li
 							><li><a id="item5" href="#flash_game"> Flash game </a></li>
 						</ul>
-						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat erat et mattis tincidunt. Vivamus suscipit dui in dignissim dictum. Integer eros justo, auctor eget scelerisque eget, auctor non turpis. Phasellus tristique felis a diam dapibus commodo sit amet eu felis. </p>
+						<p> Flash is een ontwerp platform van Adobe Systems voor het creëren van vector afbeeldingen, animaties en spellen. De inhoud, gecreëerd met Adobe Flash, kan afgespeeld worden in een Flash Player. Flash wordt vooral gebruikt voor advertenties en het streamen van multimedia. Ook kan het gebruikt worden voor interactieve content op een webpagina. </p>
 					</div>
 
 					<!-- Each block is a sub paragraph to the main subject -->		
 					<div id="header1" class="block">
-						<h2> Header 1 </h2>
-						<p> Proin ut leo ac nunc feugiat dapibus in ac libero. Proin tempor dui urna, lobortis sagittis ligula placerat nec. Quisque sed odio ac tortor imperdiet consectetur non convallis lorem. Etiam facilisis mauris sit amet mauris maximus tempus. Mauris ultricies mattis ultrices. Quisque augue dolor, convallis et congue eget, lacinia vel ipsum. Curabitur posuere semper orci, iaculis posuere leo venenatis efficitur. Nulla facilisi. Cras pharetra, odio in vestibulum rutrum, nunc est tincidunt lacus, eu auctor ante ex eu dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi finibus massa enim. Vivamus sit amet mollis orci. Morbi sodales posuere felis at viverra. Maecenas pellentesque ultrices finibus. </p>
+						<h2> Geschiedenis van Flash </h2>
+						<p> Flash is begonnen als een droom van John Gay om architect te worden. Hij kwam er snel achter dat het realiseren van deze huizen echter niet ging lukken. Rond diezelfde tijd kreeg hij een Apple II computer. Hierop begon hij te programmeren en kwam erachter dat hij hiermee iets kon ontwerpen, kon bouwen en vervolgens het resultaat van kon zien. Hij schreef alles in Apple II Basic.
+							<br><br>
+						Op zijn middelbare school had Gay een teken programma geschreven om mee te doen aan de Science Fair. Met dit programma is zijn vader gaan opscheppen bij een Macintosh Users Group. Het hoofd van deze group, Charlie Jackson, wilde al geruime tijd een bedrijf opstarten. Jackson is toen samen met Gay het bedrijf Silicon Beach Software begonnen.
+							<br><br>
+						Op dit moment kwam er een nieuw concept op de markt; de pen computer. Het bedrijf Go schreef de operating system hiervoor. Gay haalde Jackson over om in dit bedrijf te investeren. Ze gingen teken software schrijven voor deze computers, waaronder SmartSketch. AT&amp;T kocht het bedrijf Go op, maar net toen Silicon Beach Software hun product aan Go wilde geven, trok AT&amp;T de stekker uit Go.
+							<br><br>
+						Op SIGGRAPH (een conferentie over grafische computer software) kregen Jackson en Gay vaak de opmerkingen dat ze SmartSketch zouden moeten veranderen in animatie software. Dit hebben ze gedaan en brachten het in 1996 uit als FutureSpash Animator.
+							<br><br>
+						In 1996 kwam de grootste doorbraak, Microsoft was bezig met MSN en gingen hiervoor de FutureSplash software gebruiken. 
+							<br><br>
+						Ook Disney was geïntereseerd in FutureSplash. Disney werkte ook samen met Macromedia Shockwave. 
+						Eind 1996 is de software van FutureSplash verkocht aan Macromedia. FutureSplash Animator werd toen Macromedia Flash 1.0. <a class="resource" href="#"></a><a class="resource" href="#"></a>
+							<br><br>
+						In April 2005 kocht Adobe het bedrijf Macromedia. Hieruit is het huidige Adobe Flash voorgekomen. <a class="resource" href="#"></a>
+						 </p>
 					</div>
 					
 					<div id="header2" class="block">
-						<h2> Header 2 </h2>
-						<p> Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce dignissim orci quis nunc rhoncus condimentum. Nam posuere tellus sit amet lacus ultrices scelerisque. Maecenas commodo lectus nunc, ac dignissim massa laoreet nec. Phasellus fermentum iaculis nibh in ultricies. Duis eu porttitor lorem. Fusce quis massa hendrerit, scelerisque metus at, sollicitudin felis. Fusce ac nisl sem. Pellentesque non urna nec felis sagittis scelerisque. Praesent semper enim eget fermentum suscipit. Nam consectetur et leo nec sodales. Aenean ac quam ante. Sed elementum pellentesque lorem, in elementum metus vestibulum vitae. Quisque efficitur lectus fermentum justo aliquam maximus. Sed euismod ipsum eget tellus facilisis maximus.  </p>
+						<h2> Hoe werkt Flash? </h2>
+						<p> Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce dignissim orci quis nunc rhoncus condimentum. Nam posuere tellus sit amet lacus ultrices scelerisque. Maecenas commodo lectus nunc, ac dignissim massa laoreet nec. Phasellus fermentum iaculis nibh in ultricies. Duis eu porttitor lorem. Fusce quis massa hendrerit, scelerisque metus at, sollicitudin felis. </p>
+
+							<!-- Een stuk met code, een tab wordt gedaan met <span>xx</span> -->
+							<p class="code"> 
+								var i = 2; <br>
+								var len = cars.length; <br>
+								var text = ""; <br>
+								for (; i &#60; len; i++) { <br>
+								<span>xx</span>text += cars[i] + "&#60;br&#62;"; <br>
+								} <br>
+							</p>
+							
+						<p> Fusce ac nisl sem. Pellentesque non urna nec felis sagittis scelerisque. Praesent semper enim eget fermentum suscipit. Nam consectetur et leo nec sodales. Aenean ac quam ante. Sed elementum pellentesque lorem, in elementum metus vestibulum vitae. Quisque efficitur lectus fermentum justo aliquam maximus. Sed euismod ipsum eget tellus facilisis maximus.  </p>
 					</div>
 
 					<div id="header3" class="block">
@@ -108,8 +136,8 @@
 
 					<!-- Arrow that comes up on the right when scrolling the page -->
 					<div id="arrowup">
-						<img src="images/arrowup.png">
-					</div>
+ 						<img src="images/arrowup.png" alt="arrowup_img">
+ 					</div>
 				</div>
 			</div>
 		</div>

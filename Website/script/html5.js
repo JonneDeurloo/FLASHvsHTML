@@ -31,7 +31,7 @@ $(document).ready(function() {
 	$("#arrowup").click(function() {
 		$("html, body").animate({
       		scrollTop: 0
-    	}, 500);
+    	}, 0);
 	});
 });
 
@@ -40,7 +40,7 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     // show the arrowup if the page is below the menu; or hide it when it is above
-	if (scroll > $("#html5_menu").offset().top){
+	if (scroll > $("#top_menu").offset().top){
 		$("#arrowup").show(250);
 	}
 	else {

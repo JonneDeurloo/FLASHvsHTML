@@ -33,6 +33,10 @@ $(document).ready(function() {
       		scrollTop: 0
     	}, 500);
 	});
+	
+	$("a.resource").each(function(i) {
+		$(this).append("[" + (i + 1) + "]");
+	});
 });
 
 // window on scroll
@@ -40,7 +44,7 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     // show the arrowup if the page is below the menu; or hide it when it is above
-	if (scroll > $("#flash_menu").offset().top){
+	if (scroll > $("#top_menu").offset().top){
 		$("#arrowup").show(250);
 	}
 	else {

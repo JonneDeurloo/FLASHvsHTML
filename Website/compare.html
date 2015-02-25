@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<!-- Something -->
@@ -9,6 +9,7 @@
 		<link href="style/compare.css" rel="stylesheet" type="text/css">
 		<!-- Load stylesheet used for menubar -->
 		<link href="menu.css" rel="stylesheet" type="text/css">	
+		<link href="main.css" rel="stylesheet" type="text/css">	
 
 		<!-- Load jquery script -->	
 		<script src="jquery-1.11.2.min.js"></script>
@@ -22,7 +23,7 @@
 		<div id="container">
 			<!-- Menu on the left -->
 			<div id="menu_bar">
-				<div id="logo"></div>
+				<div id="logo"><a id="index_link" href="index.html"><img src="images/logo.png" alt="logo"></a></div>
 				
 				<!-- Menu itself -->
 				<div id="menu">
@@ -30,17 +31,18 @@
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="html5.html">HTML5</a></li>
 						<li><a href="flash.html">FLASH</a></li>
-						<li class="active"><a href="compare.html">COMPARE</a></li>
-						<li><a href="conclusion.html">CONCLUSION</a></li>
-						<li><a href="about.html">ABOUT</a></li>				
+						<li class="active"><a href="compare.html">VERGELIJKING</a></li>
+						<li><a href="conclusion.html">CONCLUSIE</a></li>
+						<li><a href="about.html">BRONNEN</a></li>
+						<li><a href="photos.html">FOTO'S</a></li>			
 					</ul>
 				</div>
 
 				<!-- Few options on the bottom; contact and help/info -->
 				<div id="info">
 					<ul>
-						<li><a href="contact.html"><img src="images/contact.png"></a></li
-						><li><a href="http://www.cs.uu.nl/docs/vakken/b2wt/" target="_blank"><img src="images/help.png"></a></li>
+						<li><a href="contact.html"><img src="images/contact.png" alt="contact_img"></a></li
+						><li><a href="http://www.cs.uu.nl/docs/vakken/b2wt/" target="_blank"><img src="images/help.png" alt="help_img"></a></li>
 					</ul>						
 				</div>						
 			</div>
@@ -148,7 +150,7 @@
 
 					<!-- Arrow that comes up on the right when scrolling the page -->
 					<div id="arrowup">
- 						<img src="images/arrowup.png">
+ 						<img src="images/arrowup.png" alt="arrowup_img">
  					</div>
 				</div>
 			</div>

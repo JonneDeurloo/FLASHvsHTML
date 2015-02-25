@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<!-- Something -->
@@ -9,6 +9,7 @@
 		<link href="style/about.css" rel="stylesheet" type="text/css">
 		<!-- Load stylesheet used for menubar -->
 		<link href="menu.css" rel="stylesheet" type="text/css">	
+		<link href="main.css" rel="stylesheet" type="text/css">	
 
 		<!-- Load jquery script -->	
 		<script src="jquery-1.11.2.min.js"></script>
@@ -22,7 +23,7 @@
 		<div id="container">
 			<!-- Menu on the left -->
 			<div id="menu_bar">
-				<div id="logo"></div>
+				<div id="logo"><a id="index_link" href="index.html"><img src="images/logo.png" alt="logo"></a></div>
 				
 				<!-- Menu itself -->
 				<div id="menu">
@@ -30,17 +31,18 @@
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="html5.html">HTML5</a></li>
 						<li><a href="flash.html">FLASH</a></li>
-						<li><a href="compare.html">COMPARE</a></li>
-						<li class="active"><a href="conclusion.html">CONCLUSION</a></li>
-						<li><a href="about.html">ABOUT</a></li>				
+						<li><a href="compare.html">VERGELIJKING</a></li>
+						<li><a href="conclusion.html">CONCLUSIE</a></li>
+						<li class="active"><a href="about.html">BRONNEN</a></li>
+						<li><a href="photos.html">FOTO'S</a></li>				
 					</ul>
 				</div>
 
 				<!-- Few options on the bottom; contact and help/info -->
 				<div id="info">
 					<ul>
-						<li><a href="contact.html"><img src="images/contact.png"></a></li
-						><li><a href="http://www.cs.uu.nl/docs/vakken/b2wt/" target="_blank"><img src="images/help.png"></a></li>
+						<li><a href="contact.html"><img src="images/contact.png" alt="contact_img"></a></li
+						><li><a href="http://www.cs.uu.nl/docs/vakken/b2wt/" target="_blank"><img src="images/help.png" alt="help_img"></a></li>
 					</ul>						
 				</div>						
 			</div>
@@ -53,16 +55,15 @@
 					<!-- Explain the list -->
 					<div class="block">
 						<h1> Bronnenlijst </h1>
-						<p class="more"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat erat et mattis tincidunt. Vivamus suscipit dui in dignissim dictum. Integer eros justo, auctor eget scelerisque eget, auctor non turpis. Phasellus tristique felis a diam dapibus commodo sit amet eu felis. </p>
 					</div>
 						
 					<!-- Resources used for flash -->
 					<div class="block">
 						<h2> Flash </h2>
 						<ul>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Link 1 naar iets </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Link 2 naar dat andere iets </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Nog een linkje </a></li>
+							<li><a href="http://www.adobe.com/macromedia/events/john_gay/"> The History of flash </a></li>
+							<li><a href="http://www.flashmagazine.com/news/detail/the_flash_history/"> The Flash History </a></li>
+							<li><a href="http://news.cnet.com/Adobe-to-buy-Macromedia-for-3.4-billion/2100-1014_3-5674501.html"> Adobe to buy Macromedia for $3.4 billion </a></li>
 							
 						</ul>
 					</div>
@@ -71,13 +72,13 @@
 					<div class="block">
 						<h2> HTML5 </h2>
 						<ul>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Link 1 naar iets </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Link 2 naar dat andere iets </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Nog een linkje </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<"> Hoi alex. </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<"> Laatste link </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<"> Hoi alex. </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<"> Laatste link </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Link 1 naar iets </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Link 2 naar dat andere iets </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Nog een linkje </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a"> Hoi alex. </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a"> Laatste link </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a"> Hoi alex. </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a"> Laatste link </a></li>
 						</ul>
 					</div>
 
@@ -85,11 +86,11 @@
 					<div class="block">
 						<h2> Code </h2>
 						<ul>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Link 1 naar iets </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Link 2 naar dat andere iets </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Nog een linkje </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<"> Hoi alex. </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<"> Laatste link </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Link 1 naar iets </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Link 2 naar dat andere iets </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Nog een linkje </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a"> Hoi alex. </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a"> Laatste link </a></li>
 						</ul>
 					</div>
 
@@ -97,14 +98,14 @@
 					<div class="block">
 						<h2> Overig </h2>
 						<ul>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Link 1 naar iets </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Link 2 naar dat andere iets </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Nog een linkje </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<"> Hoi alex. </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<"> Laatste link </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Link 2 naar dat andere iets </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<">Nog een linkje </a></li>
-							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&to=2015-02-20&type=a<"> Hoi alex. </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Link 1 naar iets </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Link 2 naar dat andere iets </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Nog een linkje </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a"> Hoi alex. </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a"> Laatste link </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Link 2 naar dat andere iets </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a">Nog een linkje </a></li>
+							<li><a href="https://github.com/JonneDeurloo/FLASHvsHTML/graphs/contributors?from=2015-02-15&amp;to=2015-02-20&amp;type=a"> Hoi alex. </a></li>
 						</ul>
 					</div>
 				</div>
