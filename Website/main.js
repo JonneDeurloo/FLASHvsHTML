@@ -1,15 +1,4 @@
 $(document).ready(function() {
-		// scroll to the paragraph by clicking the menu
-	$(".menu_item").click(function() {
-		var getId = $(this).attr('id');
-		var idNr = getId.substr(getId.length - 1);
-		var id = "#header" + idNr;
-
-   		$("html, body").animate({
-      		scrollTop: $(id).offset().top
-    	}, 800);
-	});
-
 	// by default; hide the arrowup
 	$("#arrowup").hide();
 
