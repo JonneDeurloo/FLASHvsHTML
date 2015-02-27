@@ -13,6 +13,12 @@ $(document).ready(function() {
 	// add numbers to resources; with style [x]
 	$("a.resource").each(function(i) {
 		$(this).append("[" + (i + 1) + "]");
+
+		var classname = $(this).attr("class");
+		var splitname = classname.split(" ");
+		var name = splitname[1];
+
+		$("#sources").append("[" + (i + 1) + "]" + name + "<br>");
 	});
 });
 
