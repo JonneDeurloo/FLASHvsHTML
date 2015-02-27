@@ -26,7 +26,18 @@ $(document).ready(function() {
 	});
 
 	// information for Flot
-	$.plot($("#placeholder"), [ [[0, 0], [1, 1], [2, 4], [4, 16], [8, 64]] ], { yaxis: { max: 70 } });
+	var d1 = [[0, 3], [1, 3], [2, 5], [3, 7], [4, 8], [5, 10], [6, 11], [7, 9], [8, 5], [9, 13]];
+
+	$.plot($("#placeholder"), [{data: d1, bars: {show: true}}], { yaxis: { max: 15 } });
+/*
+	$(document).mousemove(function(e){
+		if(e.pageX < 160) {
+			$("#menu_bar").show('slide',{direction:'left'}, 250);
+		} else {
+			$("#menu_bar").hide('slide',{direction:'left'}, 250);
+		}
+	});
+*/
 
 });
 
