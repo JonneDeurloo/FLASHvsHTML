@@ -212,3 +212,21 @@ a.resource:hover {
 #arrowup:hover {
     margin-bottom: 3px;
 }
+
+#footer {
+    position:relative;
+    width:100%;
+    text-align: center;
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 0.8em;
+    color: #555;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #555;
+}
+
+#footer a:hover {
+    color: #3FC380;
+}

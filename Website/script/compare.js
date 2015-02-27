@@ -25,15 +25,6 @@ $(document).ready(function() {
 			$('.original').css('visibility', 'visible');
 		}
 	}
-	// by default; hide the arrowup
-	$("#arrowup").hide();
-
-	// click on arrow up; page scrolls to top
-	$("#arrowup").click(function() {
-		$("html, body").animate({
-      		scrollTop: 0
-    	}, 500);
-	});
 });
 
 // window on scroll
