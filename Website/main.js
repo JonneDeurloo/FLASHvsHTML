@@ -40,8 +40,8 @@ $(document).load(function() {
 
 $(document).mousemove(function(e){
 	if(e.pageX > $(window).width() - 170) {
-		$("#leftindex").show("slide", {direction: "right"}, 250);
-	} else {
-		$("#leftindex").hide("slide", {direction: "right"}, 250);
+		$("#leftindex").show("slide", {direction: "right"}, 100);
+	} else if (e.pageX < $(window).width() - 250) {
+		$("#leftindex").hide("slide", {direction: "right"}, 100);
 	}
 });

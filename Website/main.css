@@ -206,7 +206,6 @@ a.resource:hover {
     height: 42px;
     background-color: #777;
     position: fixed;
-    right: 15px;
     bottom: 15px;
     text-align: center;
     cursor: pointer;
