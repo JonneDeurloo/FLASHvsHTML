@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	// by default; hide the arrowup
 	$("#arrowup").hide();
+	$("#leftindex").hide();
 
 	// click on arrow up; page scrolls to top
 	$("#arrowup").click(function() {
@@ -13,17 +14,9 @@ $(document).ready(function() {
 	$("a.resource").each(function(i) {
 		$(this).append("[" + (i + 1) + "]");
 	});
-
-	$(document).mousemove(function(e){
-		if(e.pageX > $(window).width() - 160) {
-			$("#index").show('slide',{direction:'right'}, 250);
-		} else {
-			$("#index").hide('slide',{direction:'right'}, 250);
-		}
-	});
 });
 
-$(document).onload(function() {
+$(document).load(function() {
 	var url = window.location.href;
 
 	var values = url.split('#');
@@ -31,4 +24,12 @@ $(document).onload(function() {
 	var linkID = $("#" + link);
 
 	$(window).scrollTop(linkID.offset().top);
+});
+
+$(document).mousemove(function(e){
+	if(e.pageX > $(window).width() - 170) {
+		$("#leftindex").show("slide", {direction: "right"}, 250);
+	} else {
+		$("#leftindex").hide("slide", {direction: "right"}, 250);
+	}
 });
