@@ -14,11 +14,17 @@ $(document).ready(function() {
 	$("a.resource").each(function(i) {
 		$(this).append("[" + (i + 1) + "]");
 
-		var classname = $(this).attr("class");
-		var splitname = classname.split(" ");
-		var name = splitname[1];
+		var nameID = $(this).attr("id");
+		var name = nameID.replace(/\_/g, " ");
 
-		$("#sources").append("[" + (i + 1) + "]" + name + "<br>");
+		$("#sources").append("<li>" + "[" + (i + 1) + "] " + name + "</li>");
+	});
+
+	$("#sources li").click(function() {
+		var resourceName = $(this).text();
+		var resource = $("#" + resourceName.substr(4).replace(/\ /g, "_"));
+
+		$(window).scrollTop(resource.offset().top - 20);		
 	});
 });
 

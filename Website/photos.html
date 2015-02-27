@@ -16,15 +16,7 @@
 		<script src="jquery-1.11.2.min.js"></script>
 		<script src="jquery-1.11.3.ui.min.js"></script>
 		<!-- Load script used for website -->
-		<script src="script/flash.js"></script>
 		<script src="main.js"></script>
-		<!-- Load script for Flickr API -->
-		<script src="script/flickr.js"></script>
-		<script src="https://api.flickr.com/services/rest/?method=flickr.photos.search&amp;api_key=e2864c14696938d1a61d33618fbd2ab5&amp;tags=html5,html&amp;sort=relevance&amp;per_page=20"></script>
-		<script src="https://api.flickr.com/services/rest/?method=flickr.photos.search&amp;api_key=e2864c14696938d1a61d33618fbd2ab5&amp;tags=adobe, flash&amp;sort=relevance&amp;per_page=20"></script>
-		<!-- Load script used for flot -->
-		<script src="flot/excanvas.min.js"></script>
-		<script src="flot/jquery.flot.js"></script>
 		
 		<title> Foto's </title>
 	</head>
@@ -68,6 +60,27 @@
 						<h1> Foto's </h1>
 					</div>
 
+					<div id="images" class="block"></div>
+
+					<script>
+						(function() {
+							var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+							$.getJSON( flickerAPI, {
+								tags: "html5",
+								tagmode: "all",
+								format: "json"
+							})
+								.done(function( data ) {
+								$.each( data.items, function( i, item ) {
+									$( "<img>" ).attr({ "src": item.media.m, "width": "100%"}).appendTo( "#images" );
+
+									if ( i === 10 ) {
+										return false;
+									}
+								});
+							});
+						})();
+					</script>
 
 					<div id="leftindex">
 						<h3> Index </h3>

@@ -189,6 +189,18 @@ a.resource:hover {
     color: #3FC380;
 }
 
+#sources {
+    padding: 1em 1.8em;
+    list-style-type: none;
+    font-family: "Arial Narrow", sans-serif;
+    font-size: .95em;
+    color: #333;
+}
+
+#sources li {
+
+}
+
 #arrowup {
     width: 42px;
     height: 42px;

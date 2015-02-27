@@ -3,16 +3,6 @@ $(document).ready(function() {
 	var d1 = [[0, 3], [1, 3], [2, 5], [3, 7], [4, 8], [5, 10], [6, 11], [7, 9], [8, 5], [9, 13]];
 
 	$.plot($("#placeholder"), [{data: d1, bars: {show: true}}], { yaxis: { max: 15 } });
-
-/*
-	$(document).mousemove(function(e){
-		if(e.pageX < 160) {
-			$("#menu_bar").show('slide',{direction:'left'}, 250);
-		} else {
-			$("#menu_bar").hide('slide',{direction:'left'}, 250);
-		}
-	});
-*/
 });
 
 // window on scroll
