@@ -3,8 +3,8 @@ Deze website is gemaakt als onderdeel van het vak 'Webtechnologie', gegeven aan 
 
 
 ## Auteurs:
-Alex Leestemaker, 	5518628
-Jonne Deurloo, 		4120167
+	Alex Leestemaker, 	5518628
+	Jonne Deurloo, 		4120167
 
 ## Getest in:
 	-

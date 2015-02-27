@@ -1,27 +1,18 @@
 $(document).ready(function() {
 	// scroll to the paragraph by clicking the menu
-	$("#item1").click(function() {
+	$(".menu_item").click(function() {
+		var getId = $(this).attr('id');
+		var idNr = getId.substr(getId.length - 1);
+		var id = "#header" + idNr;
+
    		$("html, body").animate({
-      		scrollTop: $("#header1").offset().top
+      		scrollTop: $(id).offset().top
     	}, 800);
 	});
 
-	$("#item2").click(function() {
-   		$("html, body").animate({
-      		scrollTop: $("#header2").offset().top
-    	}, 800);
-	});
-
-	$("#item3").click(function() {
-   		$("html, body").animate({
-      		scrollTop: $("#header3").offset().top
-    	}, 800);
-	});
-
-	$("#item4").click(function() {
-   		$("html, body").animate({
-      		scrollTop: $("#header4").offset().top
-    	}, 800);
+	// add numbers to resources; with style [x]
+	$("a.resource").each(function(i) {
+		$(this).append("[" + (i + 1) + "]");
 	});
 
 	// by default; hide the arrowup
