@@ -17,7 +17,7 @@ $(document).ready(function() {
 		var splitname = classname.split(" ");
 		var name = splitname[1];
 
-		$("#sources").append("[" + (i + 1) + "]" + name + "<br>");
+		$("#sources").append("<li>[" + (i + 1) + "]" + name + "</li><br>");
 	});
 
 	$(document).mousemove(function(e){

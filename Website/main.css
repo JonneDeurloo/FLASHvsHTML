@@ -213,6 +213,10 @@ a.resource:hover {
     margin-bottom: 3px;
 }
 
+ul.sources li{
+    padding-left: 10em;
+}
+
 #footer {
     position:relative;
     width:100%;
