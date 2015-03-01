@@ -134,7 +134,7 @@ hr {
 }
 
 .code span {
-    color: #BBB;
+    padding-left: 2ch;
 }
 
 #top_menu {
@@ -186,6 +186,10 @@ a.resource:hover {
 
 #sources li {
 
+}
+
+#sources li:hover {
+    cursor: pointer;
 }
 
 #arrowup {
