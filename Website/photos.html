@@ -8,22 +8,16 @@
 		<!-- Load stylesheet used for website -->
 		<link href="style/flash.css" rel="stylesheet" type="text/css">
 		<!-- Load stylesheet used for menubar -->
-		<link href="menu.css" rel="stylesheet" type="text/css">	
-		<link href="main.css" rel="stylesheet" type="text/css">	
+		<link href="style/menu.css" rel="stylesheet" type="text/css">	
+		<link href="style/main.css" rel="stylesheet" type="text/css">	
 
 		<!-- Load jquery script -->	
-		<script src="jquery-1.11.2.min.js"></script>
+		<script src="libraries/jquery-1.11.2.min.js"></script>
+		<script src="libraries/jquery-1.11.3.ui.min.js"></script>
 		<!-- Load script used for website -->
-		<script src="script/flash.js"></script>
-		<script src="main.js"></script>
-		<!-- Load script for Flickr API -->
-		<script src="script/flickr.js"></script>
-		<script src="https://api.flickr.com/services/rest/?method=flickr.photos.search&amp;api_key=e2864c14696938d1a61d33618fbd2ab5&amp;tags=html5,html&amp;sort=relevance&amp;per_page=20"></script>
-		<script src="https://api.flickr.com/services/rest/?method=flickr.photos.search&amp;api_key=e2864c14696938d1a61d33618fbd2ab5&amp;tags=adobe, flash&amp;sort=relevance&amp;per_page=20"></script>
-		<!-- Load script used for flot -->
-		<script src="flot/excanvas.min.js"></script>
-		<script src="flot/jquery.flot.js"></script>
-		
+		<script src="script/photos.js"></script>
+		<script src="script/main.js"></script>
+
 		<title> Foto's </title>
 	</head>
 	
@@ -66,9 +60,77 @@
 						<h1> Foto's </h1>
 					</div>
 
+					<div id="images" class="block"></div>
+
+					<script>
+						(function() {
+							var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+							$.getJSON( flickerAPI, {
+								tags: "html5, flash",
+								tagmode: "all",
+								format: "json"
+							})
+								.done(function( data ) {
+								$.each( data.items, function( i, item ) {
+									$( "<img>" ).attr({ "src": item.media.m, "width": "100%"}).appendTo( "#images" );
+
+									if ( i === 10 ) {
+										return false;
+									}
+								});
+							});
+						})();
+					</script>
+
+					<div id="leftindex">
+						<h3> Index </h3>
+						<ul>
+							<li><a href="index.html"> HOME </a></li>
+							<li><a href="html5.html"> HTML5 </a>
+								<ul>
+									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
+								</ul>
+							</li>
+
+							<li><a href="flash.html"> FLASH </a>
+								<ul>
+									<li><a href="flash.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="flash.html#Werking"> Werking </a></li>
+									<li><a href="flash.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="flash.html#Geschiedenis"> Geschiedenis </a></li>
+								</ul>
+							</li>
+							<li><a href="compare.html"> VERGELIJKING </a></li>
+							<li><a href="conclusion"> CONCLUSIE </a>
+								<ul>
+									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
+								</ul>
+							</li>
+							<li><a href="about.html"> BRONNEN </a>
+								<ul>
+									<li><a href="html.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="html.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="html.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="html.html#Geschiedenis"> Geschiedenis </a></li>
+								</ul>
+							</li>
+							<li><a href="photos.html"> FOTO'S </a></li>
+						</ul>
+					</div>
+					
 					<div id="footer">
 						Copyright &copy; 2015 - <a href="contact.html"> Alex Leestemaker </a> &amp; <a href="contact.html"> Jonne Deurloo </a>
 					</div>
+
+					<!-- Arrow that comes up on the right when scrolling the page -->
+					<div id="arrowup">
+ 						<img src="images/arrowup.png" alt="arrowup_img">
+ 					</div>
 				</div>
 			</div>
 		</div>
