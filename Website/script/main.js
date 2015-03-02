@@ -22,10 +22,19 @@ $(document).ready(function() {
 
 	$("#resource_list li").click(function() {
 		var resourceName = $(this).text();
-		var resource = $("#" + resourceName.substr(4).replace(/\ /g, "_"));
+		var resourceSplit = resourceName.split("]");
+		var resourceNr = resourceSplit[0].slice(1);
+
+		if (resourceNr < 10) {
+			var resource = $("#" + resourceName.substr(4).replace(/\ /g, "_"));
+		} else {
+			var resource = $("#" + resourceName.substr(5).replace(/\ /g, "_"));
+		}
 
 		$(window).scrollTop(resource.offset().top - 20);		
 	});
+
+
 });
 
 $(document).load(function() {
@@ -35,7 +44,7 @@ $(document).load(function() {
 	var link = values[1];
 	var linkID = $("#" + link);
 
-	$(window).scrollTop(linkID.offset().top);
+	$(window).scrollTop(linkID.offset().top);	
 });
 
 $(document).mousemove(function(e){
