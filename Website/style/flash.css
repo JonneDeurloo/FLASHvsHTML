@@ -29,6 +29,21 @@
 	font-size: 0.9em;
 }
 
+.block ul {
+	padding-left: 4em;
+}
+
+.block ul li a {
+	text-decoration: none;
+	color: #555;
+	font-family: "Arial Narrow", sans-serif;
+	font-size: 0.95em;
+}
+
+.block ul li a:hover {
+	color: #777;
+}
+
 
 /* Make responsive for screens with a max-width 1280px */
 @media all and (max-width: 1280px) {
