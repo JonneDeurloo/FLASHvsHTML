@@ -7,7 +7,7 @@ $(document).ready(function() {
 	$("#arrowup").click(function() {
 		$("html, body").animate({
       		scrollTop: 0
-    	}, 500);
+    	}, 200);
 	});
 	
 	// add numbers to resources; with style [x]
@@ -50,7 +50,7 @@ $(document).load(function() {
 $(document).mousemove(function(e){
 	if(e.pageX > $(window).width() - 170) {
 		$("#leftindex").show("slide", {direction: "right"}, 100);
-	} else if (e.pageX < $(window).width() - 250) {
+	} else if (e.pageX < $(window).width() - 220) {
 		$("#leftindex").hide("slide", {direction: "right"}, 100);
 	}
 });

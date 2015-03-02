@@ -106,7 +106,6 @@
 						</p>
 						
 						<h3 id="Adobe_Flash_Professional"> Adobe Flash Professional </h3>
-
 						<p> Op het moment dat Adobe Macromedia opkocht, was Adobe bezig met hun 3e Creative Suite. Het programma Adobe Flash Professional kwam dan ook in de CS3. In deze versie konden vector afbeeldingen getekend en geanimeerd worden. Deze animaties konden omgezet worden in <a class="inside_link" href="#ActionScript">ActionScript</a>. Ook konden <a class="inside_link" href="#SWF">SWF</a>, Photoshop en Illustrator bestanden ingeladen worden. Later zijn hier steeds meer mogelijkheden aan toegevoegd. In de huidige versie, Adobe Flash Professional CC, zijn er een hoop extra mogelijkheden zoals een HTML5-canvas, WebGL voor animaties en ondersteuning voor het programmeren van ActionScript. 
 							<a id="Adobe_Flash_Professional_CC_-_Ontdek_wat_je_mist" class="resource" href="http://www.adobe.com/nl/products/flash/versions.html" target="_blank"></a>
 						</p>
@@ -114,7 +113,6 @@
 							<!-- Een stuk met code, een tab wordt gedaan met <span> ... </span> -->
 
 						<h3 id="Flash Builder"> Flash Builder </h3>
-						
 						<p> Voor het maken van grotere games en applicaties wordt al snel Flash Builder gebruikt. Dit programma is bedoelt voor games en applicaties op het internet waar veel ActionScript bij komt kijken. Dit programma begon als onderdeel van Macromedia en heette Macromedia Flex 1 
 							<a id="Flex_Release_Notes" class="resource" href="https://www.adobe.com/support/documentation/en/flex/updater2/releasenotes.html" target="_blank"></a> 
 						en is vervolgens overgenomen door Adobe. Die hebben 2 releases gedaan van dit programma, Adobe Flex 2 en 3. 
@@ -124,6 +122,11 @@
 							http://www.adobe.com/support/documentation/en/flex/flex3.html
 						De 4e generatie is Flash Builder gaan heten. 
 							<a id="Adobe_Flash_Builder_47_Premium" class="resource" href="http://www.adobe.com/products/flash-builder.html" target="_blank"></a>
+						</p>
+						
+						<h3 id="FLA"> FLA </h3>
+						<p> Adobe Flash Professional slaat bestanden op als een .FLA bestand. Dit bestand bevat alles wat nodig is om het gemaakte product in elkaar te zetten. Afbeeldingen, animaties, actionscript code en de rest. 		
+							<a id="FLA_Files" class="resource" href="http://www.mediacollege.com/adobe/flash/files/fla.html" target="_blank"></a>				
 						</p>
 
 						<h3 id="SWF"> SWF </h3>
@@ -136,9 +139,9 @@
 						<h2 id="ActionScript"> ActionScript </h2>
 						<p>  Praesent porta sed leo eu posuere. Aenean vitae nulla est. Suspendisse molestie justo ac augue tincidunt vulputate. Donec diam orci, bibendum nec ipsum ut, rhoncus porta risus. Praesent sollicitudin id turpis et blandit. Duis vel ipsum sed erat congue mollis sed at tellus. Nunc sem urna, accumsan et nisi eu, ultricies accumsan dui. Phasellus sed ex urna. Aenean urna metus, semper in lacus eu, suscipit suscipit sapien. </p>
 						
-						<!-- Flot -->
+						<!-- Flot-->
 						<div id="flot">
-							<div id="placeholder" class="demo-placeholder"></div>
+							<div id="placeholder"></div>
 							<p> In deze grafiek is een enig zins kwadratisch verloop te zien. Echter geen parabool, maar rechte lijnen. </p>
 						</div>
 						
@@ -147,8 +150,24 @@
 
 
 					<div class="block">
-						<h2 id="Toepassingen"> Header 4 </h2>
-						<p> In congue aliquam elit et consequat. Donec finibus, diam eu viverra viverra, augue libero luctus neque, id placerat lorem tellus non magna. Pellentesque quis mattis metus. Vestibulum imperdiet metus purus, a rutrum felis molestie nec. Ut risus tellus, sagittis eu tempor at, hendrerit rutrum neque. Nullam imperdiet, nibh fringilla interdum varius, elit est sodales velit, et facilisis lacus massa sed ligula. Suspendisse vulputate massa vitae est aliquet, quis finibus metus varius. Integer in arcu blandit, elementum eros vitae, lacinia erat. Morbi eu tempus quam, eu feugiat neque. Integer laoreet magna sit amet lectus congue, eget vehicula eros ornare. Curabitur pulvinar eu purus nec imperdiet. Phasellus lacinia diam vel urna faucibus, nec rutrum risus semper. Nullam eu molestie metus. Morbi interdum sagittis ipsum. Duis gravida nibh nec feugiat ornare. Etiam id mi tristique, accumsan dui in, congue nibh.   </p>
+						<h2 id="Toepassingen"> Toepassingen </h2>
+						<p> Het embedden van SWF bestanden kan in html gemakkelijk doormiddel van de &#60;object&#62; tag.
+							<a id="HTML_Plug-ins" class="resource" href="https://helpx.adobe.com/flash/kb/edit-import-swf-file-flash.html" target="_blank"></a>
+						In HTML5 kan ook gebruik gemaakt worden van de tag &#60;embed&#62;, &#60;audio&#62; of &#60;video&#62;.
+							<a id="HTML_embed_Tag" class="resource" href="http://www.w3schools.com/tags/tag_embed.asp" target="_blank"></a>
+							<a id="HTML_Audio-Video_DOM_Reference" class="resource" href="http://www.w3schools.com/tags/ref_av_dom.asp" target="_blank"></a> 
+						Het invoegen van zo’n SWF bestand ziet er dan als volgt uit:</p>
+							<p class="code"> &#60;object width="400" height="400" data="helloworld.swf"&#62;&#60;/object&#62; </p>
+						<p> Of in HTML5: </p>
+							<p class="code"> &#60;embed width="400" height="400" src="helloworld.swf"&#62; </p>
+ 						<p> Ook kan een SWF bestand ingeladen worden met behulp van een JavaScript API. 
+ 							<a id="SWFObject_JavaScript_API_documentation" class="resource" href="https://code.google.com/p/swfobject/wiki/api" target="_blank"></a> 
+ 						In de javascrip code kan een SWF bestand dan als volgt ingeladen worden: 
+
+						</p>
+ 							<p class="code"> swfobject.embedSWF('url', 'id', 'width', 'height', 'swf version'); </p>
+ 						</p>
+
 					</div>
 
 					<div class="block">
