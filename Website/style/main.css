@@ -104,7 +104,7 @@ hr {
 .block h3 {
     color: #222;
     font-family: "Arial", "Helvetica", sans-serif;
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: bold;
     line-height: 1em;
     height: 1em;
@@ -131,6 +131,16 @@ hr {
     margin: 0 1.8em;
     text-indent: 0;
     border-radius: 5px;
+}
+
+.block a.inside_link {
+    text-decoration: none;
+    color: #07984E;
+    font-style: italic;
+}
+
+.block a.inside_link:hover {
+    color: #3FC380;
 }
 
 .code span {
@@ -176,7 +186,7 @@ a.resource:hover {
     color: #3FC380;
 }
 
-#sources {
+#resource_list {
     padding: 1em 1.8em;
     list-style-type: none;
     font-family: "Arial Narrow", sans-serif;
@@ -184,12 +194,9 @@ a.resource:hover {
     color: #333;
 }
 
-#sources li {
-
-}
-
-#sources li:hover {
+#resource_list li:hover {
     cursor: pointer;
+    color: #666;
 }
 
 #arrowup {

@@ -17,10 +17,10 @@ $(document).ready(function() {
 		var nameID = $(this).attr("id");
 		var name = nameID.replace(/\_/g, " ");
 
-		$("#sources").append("<li>" + "[" + (i + 1) + "] " + name + "</li>");
+		$("#resource_list").append("<li>" + "[" + (i + 1) + "] " + name + "</li>");
 	});
 
-	$("#sources li").click(function() {
+	$("#resource_list li").click(function() {
 		var resourceName = $(this).text();
 		var resource = $("#" + resourceName.substr(4).replace(/\ /g, "_"));
 

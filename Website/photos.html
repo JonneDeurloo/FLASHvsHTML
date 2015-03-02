@@ -72,9 +72,13 @@
 							})
 								.done(function( data ) {
 								$.each( data.items, function( i, item ) {
-									$( "<img>" ).attr({ "src": item.media.m, "width": "100%"}).appendTo( "#images" );
-
-									if ( i === 10 ) {
+									// get high resolution image
+									var image = item.media.m.slice(0, -5);
+									var highResImage = image + "b.jpg";
+									// add html
+									$( "<img>" ).attr({ "src": highResImage, "width": "100%"}).appendTo( "#images" );
+									// load 10 images
+									if ( i == 10 ) {
 										return false;
 									}
 								});

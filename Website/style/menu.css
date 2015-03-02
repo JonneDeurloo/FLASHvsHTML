@@ -40,7 +40,7 @@
 	line-height: 45px;
 }
 
-#menu li {
+#menu ul li {
 	width: 150px;
 	height: 45px;
 	background-color: #444444;
@@ -62,9 +62,10 @@
 	font-size: 1.2em;
 }
 
-#menu .active a{
+#menu .active a {
 	color: #eeeeee;
 	background-color: #666666;
+	pointer-events: none;
 }
 
 #info {
@@ -83,10 +84,21 @@
 #info img {
 	width: 36px;
 	height: 36px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #3a3a3a;
+	border-radius: 5px;
 	margin-bottom: 6px;
 	transition: margin-bottom 0.4s ease-out;
 }
 
 #info img:hover {
 	margin-bottom: 9px;
+}
+
+#info li.active img{
+	background-color: #666;
+	border-color: #666;
+	pointer-events: none;
+	dragable: u;
 }
