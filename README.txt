@@ -1,4 +1,4 @@
- FLASHvsHTML
+# FLASHvsHTML
 Deze website is gemaakt als onderdeel van het vak 'Webtechnologie', gegeven aan de Universiteit Utrecht.
 
 
