@@ -25,6 +25,93 @@ $(document).ready(function() {
 			$('.original').css('visibility', 'visible');
 		}
 	}
+
+	// information for Flot
+	var d1 = [[0, 82], [1, 99]];
+
+	var plot = $.plot("#placeholder1", [
+		{ data: d1 }
+	], {
+		bars: {
+			show: true,
+			align:'center', 
+			barWidth:0.75,
+			margin: 0.1
+		},
+		grid: {
+			hoverable: true
+		},
+		yaxis: {
+			min: 0,
+			max: 100
+		},
+		xaxis: {
+			ticks: [[0,'HTML5'],[1,'Flash']],
+			tickLength: 0,
+			autoscaleMargin: 0.1
+		}
+	});
+
+	// information for Flot
+	var d1 = [[0, 97], [1, 0]];
+
+	var plot = $.plot("#placeholder2", [
+		{ data: d1 }
+	], {
+		bars: {
+			show: true,
+			align:'center', 
+			barWidth:0.75,
+			margin: 0.1
+		},
+		grid: {
+			hoverable: true
+		},
+		yaxis: {
+			min: 0,
+			max: 100
+		},
+		xaxis: {
+			ticks: [[0,'HTML5'],[1,'Flash']],
+			tickLength: 0,
+			autoscaleMargin: 0.1
+		}
+	});
+
+	$("<div id='tooltip'></div>").css({
+			position: "absolute",
+			display: "none",
+			border: "1px solid #fdd",
+			padding: "2px",
+			"background-color": "#fee",
+			opacity: 0.80
+		}).appendTo("body");
+
+	$("#placeholder1").bind("plothover", function (event, pos, item) {
+		if (item) {
+			var x = item.datapoint[0].toFixed(2),
+				y = item.datapoint[1].toFixed(2);
+
+			$("#tooltip").html(y + "%")
+				.css({top: item.pageY+5, left: item.pageX+5})
+				.fadeIn(200);
+		} else {
+			$("#tooltip").hide();
+		}
+	});
+
+	$("#placeholder2").bind("plothover", function (event, pos, item) {
+		if (item) {
+			var x = item.datapoint[0].toFixed(2),
+				y = item.datapoint[1].toFixed(2);
+
+			$("#tooltip").html(y + "%")
+				.css({top: item.pageY+5, left: item.pageX+5})
+				.fadeIn(200);
+		} else {
+			$("#tooltip").hide();
+		}
+	});
 });
 
 // window on scroll
