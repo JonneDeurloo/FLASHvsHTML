@@ -9,6 +9,9 @@
 	padding-bottom: 40px;
 }
 
+#top_menu li {
+	width: 25%;
+}
 #html5_game {
 	text-align: center;
 	padding-left: 0;

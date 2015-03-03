@@ -29,18 +29,18 @@
 	font-size: 0.9em;
 }
 
-.block ul {
+#website_list {
 	padding-left: 4em;
 }
 
-.block ul li a {
+#website_list li a {
 	text-decoration: none;
 	color: #555;
 	font-family: "Arial Narrow", sans-serif;
 	font-size: 0.95em;
 }
 
-.block ul li a:hover {
+#website_list li a:hover {
 	color: #777;
 }
 

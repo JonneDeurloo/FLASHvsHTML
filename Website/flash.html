@@ -99,7 +99,7 @@
 					
 					<div class="block">
 						<h2 id="Werking"> Hoe werkt Flash? </h2>
-						<p> Voor het creëren van Flash content kan gebruik gemaakt worden van twee verschillende programma’s van Adobe Systems; Adobe Flash Professional en Adobe Flash Builder.  De eerste is een tijdlijn gebaseerd programma dat vooral wordt gebruikt voor het maken van interactieve content op websites, games en multimedia-inhoud. 
+						<p> Voor het creëren van Flash content kan gebruik gemaakt worden van twee verschillende programma’s van Adobe Systems; <a class="inside_link" href="#Adobe_Flash_Professional">Adobe Flash Professional</a> en <a class="inside_link" href="#Adobe_Flash_Builder">Adobe Flash Builder</a>.  De eerste is een tijdlijn gebaseerd programma dat vooral wordt gebruikt voor het maken van interactieve content op websites, games en multimedia-inhoud. 
 							<a id="FAQ_Adobe_Flash_Professional_CC" class="resource" href="https://helpx.adobe.com/nl/flash/faq.html" target="_blank"></a> 
 						Voor de meer gecompliceerde games wordt al snel overgestapt op het tweede programma, Adobe Flash Builder. Dit programma maakt gebruik van ActionScript als object gerichte taal achter de game. 
 							<a id="FAQ_Adobe_Flash_Builder_47_Premium" class="resource" href="http://www.adobe.com/nl/products/flash-builder/faq.html" target="_blank"></a>
@@ -112,7 +112,7 @@
 
 							<!-- Een stuk met code, een tab wordt gedaan met <span> ... </span> -->
 
-						<h3 id="Flash Builder"> Flash Builder </h3>
+						<h3 id="Adobe_Flash_Builder"> Flash Builder </h3>
 						<p> Voor het maken van grotere games en applicaties wordt al snel Flash Builder gebruikt. Dit programma is bedoelt voor games en applicaties op het internet waar veel ActionScript bij komt kijken. Dit programma begon als onderdeel van Macromedia en heette Macromedia Flex 1 
 							<a id="Flex_Release_Notes" class="resource" href="https://www.adobe.com/support/documentation/en/flex/updater2/releasenotes.html" target="_blank"></a> 
 						en is vervolgens overgenomen door Adobe. Die hebben 2 releases gedaan van dit programma, Adobe Flex 2 en 3. 
@@ -126,20 +126,31 @@
 						
 						<h3 id="FLA"> FLA </h3>
 						<p> Adobe Flash Professional slaat bestanden op als een .FLA bestand. Dit bestand bevat alles wat nodig is om het gemaakte product in elkaar te zetten. Afbeeldingen, animaties, actionscript code en de rest. 		
-							<a id="FLA_Files" class="resource" href="http://www.mediacollege.com/adobe/flash/files/fla.html" target="_blank"></a>				
+							<a id="FLA_Files" class="resource" href="http://www.mediacollege.com/adobe/flash/files/fla.html" target="_blank"></a>	
 						</p>
 
 						<h3 id="SWF"> SWF </h3>
-						<p> Voor het internet worden deze .FLA bestanden gecomprimeerd tot kleinere bestanden genaamd .SWF (Small Web Format). Deze bestanden kunnen niet meer ingeladen worden met Adobe Flash omdat sommige stukken uit het originele bestand worden gecomprimeerd tot data waar het programma niks meer mee kan. 
+						<p> Voor het internet worden deze FLA bestanden gecomprimeerd tot kleinere bestanden genaamd SWF. Toen Flash nog onderdeel was van Macromedia stond deze afkorting voor Shockwave Flash Files.
+							<a id="Adobe_Flash_CS3_Professional_How-To's_100_Essential_Techniques" class="resource" href="http://books.google.nl/books?id=ZshrkM5INSkC&amp;pg=PT30&amp;redir_esc=y#v=onepage&amp;q&amp;f=false"></a>
+						Later is deze afkorting gaan staan voor Small Web Format. <br>
+						Deze bestanden kunnen niet meer ingeladen worden met Adobe Flash omdat sommige stukken uit het originele bestand worden gecomprimeerd tot data waar het programma niks meer mee kan. 
 							<a id="Edit_import_SWF_file_Flash" class="resource" href="https://helpx.adobe.com/flash/kb/edit-import-swf-file-flash.html" target="_blank"></a>
  						</p>
 					</div>
 
 					<div class="block">
 						<h2 id="ActionScript"> ActionScript </h2>
-						<p>  Praesent porta sed leo eu posuere. Aenean vitae nulla est. Suspendisse molestie justo ac augue tincidunt vulputate. Donec diam orci, bibendum nec ipsum ut, rhoncus porta risus. Praesent sollicitudin id turpis et blandit. Duis vel ipsum sed erat congue mollis sed at tellus. Nunc sem urna, accumsan et nisi eu, ultricies accumsan dui. Phasellus sed ex urna. Aenean urna metus, semper in lacus eu, suscipit suscipit sapien. </p>
-						
-						<p>	Proin a iaculis erat. Etiam luctus elit porta, dapibus sapien quis, tincidunt magna. Ut rhoncus eros eget tortor cursus, id convallis libero finibus. Ut rutrum, nisl mattis ornare lobortis, velit ex bibendum purus, nec egestas orci odio at orci. Vestibulum tincidunt semper nisi vitae rhoncus. Phasellus ornare metus tortor, eget consectetur enim malesuada eget. Proin laoreet condimentum leo, vulputate porttitor elit.   </p>
+						<p>  De huidige versie van ActionScript, is ActionScript 3. Maar voordat we daar zijn, beginnen we bij de eerste versie; ActionScript 1. </p>
+						<p> De eerste versie van ActionScript was niet heel bijzonder. De voornaamste doelen waren interactie met de muis en pagina naviagtie. Bij Flash 5 werden de functionaliteiten redelijk gelijk aan die van JavaScript. Bij deze update kon er gebruik gemaakt worden van variabelen en methodes. Ook was er een mogelijkheid voor wat simpel object-gericht programeren.
+							<br><br>
+						ActionScript 2.0 kwam in 2004. In deze versie kon een type aan een variabele gegeven worden. Je kon nu aangeven of je te maken had met een string, nummer of andere objecten. Ook was er een nieuwe class-syntax. Deze syntax lijkt op de manier waarop classes worden gedefineerd in Java.
+							<br><br>
+						In Actionscript 3 zate grote veranderingen. De veranderingen waren zelfs zo groot, dat het een hele nieuwe 'virtual machine' (de software die de ActionScript code uitvoert) nodig had. Er is verder weinig veranderd aan de syntax, maar is in de essentie dus veel efficiënter en productiever geworden. Nieuwe functies in deze 3e versie zijn onder andere; <br>
+						<i>‘Runtime exceptions’.</i> Tijdens het starten van de code wordt een error gegeven als iets mis gaat. Dit maakt het debuggen een stuk makkelijker.<br>
+						<i>‘Int vs Uint’.</i> Er wordt verschil gemaakt tussen grote en kleinere nummers. Hierdoor kunnen sommige berekeningen sneller gedaan worden. <br>
+						<i>‘Sealed classes’.</i> Classes zijn nu static gebaseerd. Hierdoor wordt een class een stuk beter in performance en een stuk robuster. 
+							<a id="Getting_Started_with_ActionScript_3_in_Adobe_Flash_CS3" class="resource" href="http://www.senocular.com/flash/tutorials/as3withflashcs3/" target="_blank"></a> 
+						</p>
 					</div>
 
 
@@ -163,7 +174,7 @@
 
  						<h3 id="Voorbeelden"> Voorbeelden </h3>
  						<p> Flash is na JavaScript de grootste client-side programmeertaal op het web (zie onderstaande grafiek). Een aantal belangrijke en grote websites die gebruik maken van Flash zijn: </p>
-							<ul>
+							<ul id="website_list">
 								<li><a href="www.google.com">Google.com</a></li>
 								<li><a href="www.youtube.com">Youtube.com</a></li>
 								<li><a href="www.yahoo.com">Yahoo.com</a></li>
@@ -177,7 +188,6 @@
 								<p> Deze grafiek geeft het percentage van gebruik aan over bepaalde server-side programeer talen. <a id="Usage_of_client-side_programming_languages_for_websites" class="resource" href="http://w3techs.com/technologies/overview/client_side_language/all" target="_blank"></a> </p>
 							</div>
  						</p>
-
 					</div>
 
 					<div class="block">
@@ -194,9 +204,9 @@
 							<li><a href="html5.html"> HTML5 </a>
 								<ul>
 									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
-									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
-									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
-									<li><a href="html5.html#Geschiedenis"> Geschiedenis </a></li>
+									<li><a href="html5.html#Vernieuwing"> Vernieuwing </a></li>
+									<li><a href="html5.html#Gebruik"> Gebruik </a></li>
+									<li><a href="html5.html#Bronnen"> Bronnen </a></li>
 								</ul>
 							</li>
 
