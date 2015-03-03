@@ -5,11 +5,11 @@
 		<meta charset="UTF-8">
 		<meta name="author" content="J. M. Deurloo">	
 		
-		<!-- Load stylesheet used for website -->
-		<link href="style/compare.css" rel="stylesheet" type="text/css">
 		<!-- Load stylesheet used for menubar -->
 		<link href="style/menu.css" rel="stylesheet" type="text/css">	
 		<link href="style/main.css" rel="stylesheet" type="text/css">	
+		<!-- Load stylesheet used for website -->
+		<link href="style/compare.css" rel="stylesheet" type="text/css">
 
 		<!-- Load jquery script -->	
 		<script src="libraries/jquery-1.11.2.min.js"></script>
@@ -17,7 +17,11 @@
 		<!-- Load script used for website -->
 		<script src="script/compare.js"></script>
 		<script src="script/main.js"></script>
-		
+		<!-- Load script used for flot -->
+		<script src="flot/excanvas.min.js"></script>
+		<script src="flot/jquery.flot.js"></script>
+		<script src="flot/jquery.flot.time.js"></script>
+
 		<title> Compare </title>
 	</head>
 	
@@ -72,82 +76,85 @@
 					<!-- Each block has information about html5 and flash; the h2 is the subject that is compared -->
 					<div class="block">
 						<h2> DESKTOP BROWSER SUPPORT </h2>
-						<ul>
-							<li><p> Lorum ipsum geen idee, mooie tekst maar even geen zin om op te zoeken enzo. </p></li
-							><li><p> Eros dara en dan nog wat dingen, maar dit is niet belangrijk voor mij. </p></li>
-						</ul>
+						<!-- Flot-->
+						<div class="flot">
+							<div id="placeholder1"></div>
+						</div>
+						<p> Op dit moment ondersteunen bijna alle browser Flash, en in mindere maten HTML5. </p>
 					</div>
 
 					<div class="block">
 						<h2> MOBILE BROWSER SUPPORT </h2>
+						<!-- Flot-->
+						<div class="flot">
+							<div id="placeholder2"></div>
+						</div>
+						<p> Op dit moment ondersteunt geen enkele mobiele browser Flash, en bijna alle browsers HTML5. </p>
+
+					</div>
+
+					<div class="block">
+						<h2> FILES </h2>
 						<ul>
-							<li><p> Lorum ipsum geen idee, mooie tekst maar even geen zin om op te zoeken enzo. </p></li
-							><li><p> Eros dara en dan nog wat dingen, maar dit is niet belangrijk voor mij. </p></li>
+							<li><p> In HTML5 worden er <i>veel verschillende pagina's</i> geladen. Dit betekend dat er een goed file managment moet zijn. </p></li
+							><li><p> Flash wordt gebundeld tot <i>één SWF bestand</i>. Delen van Flash content is hierdoor erg gemakkelijk. </p></li>
 						</ul>
 					</div>
 
 					<div class="block">
-						<h2> FILE SIZE </h2>
+						<h2> PLAYER </h2>
 						<ul>
-							<li><p> Lorum ipsum geen idee, mooie tekst maar even geen zin om op te zoeken enzo. </p></li
-							><li><p> Eros dara en dan nog wat dingen, maar dit is niet belangrijk voor mij. </p></li>
+							<li><p> Voor HTML5 is <i>geen</i> losse player nodig om de content af te spelen. </p></li
+							><li><p> Flash heeft een <i>Flash Player</i> nodig om de content af te spelen. </p></li>
 						</ul>
 					</div>
 
 					<div class="block">
-						<h2> SPEED </h2>
+						<h2> VERSCHIL IN BROWSERS </h2>
 						<ul>
-							<li><p> Lorum ipsum geen idee, mooie tekst maar even geen zin om op te zoeken enzo. </p></li
-							><li><p> Eros dara en dan nog wat dingen, maar dit is niet belangrijk voor mij. </p></li>
+							<li><p> HTML5 content kan <i>erg verschillen</i> per browser. </p></li
+							><li><p> Flash content is in elke browser <i>precies</i> hetzelfde. </p></li>
 						</ul>
 					</div>
 
 					<div class="block">
-						<h2> block 5 </h2>
+						<h2> iOS </h2>
 						<ul>
-							<li><p> Lorum ipsum geen idee, mooie tekst maar even geen zin om op te zoeken enzo. </p></li
-							><li><p> Eros dara en dan nog wat dingen, maar dit is niet belangrijk voor mij. </p></li>
+							<li><p> HTML5 wordt <i>ondersteunt in iOS</i>. </p></li
+							><li><p> Flash wordt <i>niet ondersteund</i> door iOs apparaten.</p></li>
 						</ul>
 					</div>
 
 					<div class="block">
-						<h2> block 6 </h2>
+						<h2> PROGRAMEER TAAL </h2>
 						<ul>
-							<li><p> Lorum ipsum geen idee, mooie tekst maar even geen zin om op te zoeken enzo. </p></li
-							><li><p> Eros dara en dan nog wat dingen, maar dit is niet belangrijk voor mij. </p></li>
+							<li><p> HTML5 wordt geprogrameerd met behulp van <i>verschillende talen</i> (onderandere JavaScript en CSS3). </p></li
+							><li><p> Flash wordt geprogrameerd met behulp van <i>ActionScript</i>. </p></li>
 						</ul>
 					</div>
 
 					<div class="block">
-						<h2> block 7 </h2>
+						<h2> COMPRESSIE </h2>
 						<ul>
-							<li><p> Lorum ipsum geen idee, mooie tekst maar even geen zin om op te zoeken enzo. </p></li
-							><li><p> Eros dara en dan nog wat dingen, maar dit is niet belangrijk voor mij. </p></li>
+							<li><p> HTML5 wordt <i>niet</i> gecomprimeerd. </p></li
+							><li><p> Flash content wordt <i>wel gecomprimeerd</i> tot één SWF bestand. </p></li>
 						</ul>
 					</div>
 
 					<div class="block">
-						<h2> block 8 </h2>
+						<h2> HARDWARE </h2>
 						<ul>
-							<li><p> Lorum ipsum geen idee, mooie tekst maar even geen zin om op te zoeken enzo. </p></li
-							><li><p> Eros dara en dan nog wat dingen, maar dit is niet belangrijk voor mij. </p></li>
+							<li><p> HTML5 heeft een <i>gelimiteerde toegang</i> tot externe hardware van het apparaat (microfoon, webcam, speakers, gps, etc). </p></li
+							><li><p> Flash heeft <i>volledig toegang</i> tot alle externe hardware aangesloten op een apparaat. </p></li>
 						</ul>
 					</div>
 
-					<div class="block">
-						<h2> block 9 </h2>
-						<ul>
-							<li><p> Lorum ipsum geen idee, mooie tekst maar even geen zin om op te zoeken enzo. </p></li
-							><li><p> Eros dara en dan nog wat dingen, maar dit is niet belangrijk voor mij. </p></li>
-						</ul>
-					</div>
-
-					<div class="block">
-						<h2> block 10 </h2>
-						<ul>
-							<li><p> Lorum ipsum geen idee, mooie tekst maar even geen zin om op te zoeken enzo. </p></li
-							><li><p> Eros dara en dan nog wat dingen, maar dit is niet belangrijk voor mij. </p></li>
-						</ul>
+					<div id="bronnen" class="block">
+						<h2> Bronnen </h2>
+						<p>
+							<a href="http://www.dacast.com/blog/what-is-the-difference-html5-video-vs-flash/"> What is the difference: HTML5 Video vs Flash? </a> <br>
+							<a href="http://flashvhtml.com/"> Flash vs. HTML5 </a>
+						</p>
 					</div>
 
 					<div id="leftindex">

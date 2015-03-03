@@ -91,6 +91,10 @@
 	padding: 1em 1.8em;
 }
 
+.block p i {
+	color: #07984E;
+}
+
 .block h2 {	
 	color: #222;
 	font-family: "Diner-Fatt", sans-serif;
@@ -120,6 +124,35 @@
 	display: inline-block;
 	width: 50%;
 	vertical-align: top;
+}
+
+#bronnen p {
+	text-indent: 0;
+}
+
+.block a {
+    text-decoration: none;
+    color: #07984E;
+}
+
+.block a:hover {
+    color: #3FC380;
+}
+
+.flot {
+	padding: 1em;
+}
+
+#placeholder1 {
+	width: 50%;
+	height: 200px;
+	margin: 0 auto;
+}
+
+#placeholder2 {
+	width: 50%;
+	height: 200px;
+	margin: 0 auto;
 }
 
 #arrowup {
